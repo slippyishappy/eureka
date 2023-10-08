@@ -22,7 +22,7 @@ body {
 
 ul {
   list-style-type: none;
-  
+
 }
 
 .card {
@@ -51,6 +51,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .star {
