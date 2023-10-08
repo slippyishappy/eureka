@@ -28,7 +28,8 @@ body {
 
 ul {
   list-style-type: none;
-
+  font-family: "Rubik";
+  font-size: 15px;  
 }
 
 .card {
@@ -46,6 +47,7 @@ ul {
 .add {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .text {
@@ -68,6 +70,12 @@ ul {
     border-radius: 50%;
     animation: starMove 25s linear infinite;
   }
+
+  footer {
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center; 
+  }
   
   @keyframes starMove {
     0% {
@@ -79,11 +87,13 @@ ul {
   }
 
   @media screen and (max-width: 1000px) {
-    .card {
-      flex-direction: column;
+
+    img {
+      width: 300px;
+      height: 300px;
     }
 
-    .add {
+    .add, .intro, .card {
       flex-direction: column;
     }
   }
