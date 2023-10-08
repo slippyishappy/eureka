@@ -72,8 +72,12 @@ ul {
     }
   }
 
-  /*@media screen and (max-width: 720px) {
-    p {
-      color: red;
+  @media screen and (max-width: 1000px) {
+    .card {
+      flex-direction: column;
     }
-  }*/
+
+    .add {
+      flex-direction: column;
+    }
+  }
