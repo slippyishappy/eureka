@@ -51,3 +51,13 @@ function createStars(numStars) {
 
 const numStars = 100;
 createStars(numStars);
+
+let audioPlayed = false;
+
+window.addEventListener('scroll', function() {
+    if (!audioPlayed && window.scrollY > window.innerHeight / 2) {
+        let audioElement = document.getElementById('myAudio');
+        audioElement.play();
+        audioPlayed = true; 
+    }
+});
