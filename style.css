@@ -62,23 +62,28 @@ ul {
     margin: 20px;
 }
 
+#star-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .star {
     position: absolute;
     width: 2px;
     height: 2px;
     background-color: #FFF;
     border-radius: 50%;
-    animation: starMove 25s linear infinite;
+    z-index: -1;
+    animation: starMove 30s linear infinite;
   }
 
   footer {
     margin-top: 20px;
     padding: 50px;
     text-align: center; 
-  }
-
-  .easter-egg {
-    display: none;
   }
   
   @keyframes starMove {

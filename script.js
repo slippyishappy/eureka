@@ -40,7 +40,8 @@ function createStar() {
   star.style.left = `${x}px`;
   star.style.top = `${y}px`;
 
-  document.body.appendChild(star);
+    document.getElementById('star-container').appendChild(star);
+  
 }
 
 function createStars(numStars) {
@@ -51,13 +52,3 @@ function createStars(numStars) {
 
 const numStars = 100;
 createStars(numStars);
-
-let audioPlayed = false;
-
-window.addEventListener('scroll', function() {
-    if (!audioPlayed && window.scrollY > window.innerHeight / 2) {
-        let audioElement = document.getElementById('myAudio');
-        audioElement.play();
-        audioPlayed = true; 
-    }
-});
