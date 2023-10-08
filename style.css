@@ -35,6 +35,11 @@ ul {
   flex: 0 1 280px;
 }
 
+.add {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .text {
     padding-left: 40px;
     padding-right: 40px;
