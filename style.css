@@ -76,6 +76,10 @@ ul {
     padding: 50px;
     text-align: center; 
   }
+
+  .easter-egg {
+    display: none;
+  }
   
   @keyframes starMove {
     0% {
