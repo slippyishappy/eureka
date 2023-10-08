@@ -22,11 +22,13 @@ body {
 
 ul {
   list-style-type: none;
+  
 }
 
 .card {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .item-card {
@@ -48,6 +50,7 @@ ul {
 .suns {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .star {
@@ -67,3 +70,9 @@ ul {
       transform: translateY(-100vh);
     }
   }
+
+  /*@media screen and (max-width: 720px) {
+    p {
+      color: red;
+    }
+  }*/
